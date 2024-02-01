@@ -72,3 +72,84 @@ nav a:hover {
     color: #d7d7d7;
     background-color: #909090;
 }
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .logo_titulo {
+        margin-left: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+    }
+
+    .gato-container {
+        display: block;
+    }
+
+    .gato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+    
+    .gato img{
+        height: 220px;
+    }
+    
+    /* Estilo base del botón */
+    button {
+        background: linear-gradient(to bottom, #888888, #666666);
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+    }
+    
+    /* Estilo hover del botón */
+    button:hover {
+        background: linear-gradient(to bottom, #ff8800, #ff6600);
+    }
+    
+    /* Ajustar tamaño del texto del botón */
+    button {
+        font-size: 16px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+    }
+
+    article {
+        padding: 10px;
+    }
+
+    .secondary-article {
+        width: 85%; /* Ajusta el ancho según tus preferencias */
+    }
+}
