@@ -131,6 +131,50 @@ article p{
     font-size: 20px;
 }
 
+.gato-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gato {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    margin: 10px; /* Ajusta el margen entre los div según tus preferencias */
+}
+
+.gato img{
+    height: 200px;
+}
+
+/* Estilo base del botón */
+button {
+    background: linear-gradient(to bottom, #888888, #666666);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+    
+}
+
+button a{
+    text-decoration: none;
+    color: #ededed;
+}
+
+/* Estilo hover del botón */
+button:hover {
+    background: linear-gradient(to bottom, #ff8800, #ff6600);
+}
+
+/* Ajustar tamaño del texto del botón */
+button {
+    font-size: 16px;
+}
+
 .secondary-article img{
     width: 100%;
 }
@@ -178,6 +222,43 @@ footer {
         margin-top: 20px;
         margin-bottom: 10px;
         
+    }
+
+    .gato-container {
+        display: block;
+    }
+
+    .gato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+    
+    .gato img{
+        height: 220px;
+    }
+    
+    /* Estilo base del botón */
+    button {
+        background: linear-gradient(to bottom, #888888, #666666);
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+    }
+    
+    /* Estilo hover del botón */
+    button:hover {
+        background: linear-gradient(to bottom, #ff8800, #ff6600);
+    }
+    
+    /* Ajustar tamaño del texto del botón */
+    button {
+        font-size: 16px;
     }
 
     main {
