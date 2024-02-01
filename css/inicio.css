@@ -1,7 +1,7 @@
 /* inicio.css */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,7 +29,7 @@ header {
 }
 
 .logo_titulo {
-    margin-left: 10px; 
+   margin-left: 15px;
 }
 
 nav {
@@ -164,7 +164,7 @@ footer {
     }
 
     .logo_titulo {
-        margin-left: 0;
+        margin-left: 10px;
         text-align: center;
         margin-top: 10px;
     }
@@ -175,8 +175,9 @@ footer {
     }
 
     nav ul {
-        margin-top: 15px;
+        margin-top: 20px;
         margin-bottom: 10px;
+        
     }
 
     main {
