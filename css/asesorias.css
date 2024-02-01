@@ -1,11 +1,9 @@
-/* inicio.css */
-
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(../source/img/fondo1.jpg);
+    background-image: url(../source/img/fondo2.jpg);
 }
 
 header {
@@ -68,48 +66,12 @@ nav a {
     background-color: #ffffff;
     padding: 5px;
     border-radius: 15%;
-    
 }
 
 nav a:hover {
     color: #d7d7d7;
     background-color: #909090;
 }
-
-
-.inicio{
- position: relative;
- background-image: url(../source/img/fondoAnimado2.gif);
- background-position: center center;
- background-size: cover;
- height: 90vh;
- min-height: 30rem;
- 
-}
-
-.inicio::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-
-}
-
-.inicio h1{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 0;
-}
-
-
 
 main {
     display: flex;
@@ -141,22 +103,6 @@ article p{
     font-size: 20px;
 }
 
-.gato-container {
-    display: flex;
-    justify-content: center;
-}
-
-.gato {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos verticalmente */
-    margin: 10px; /* Ajusta el margen entre los div según tus preferencias */
-}
-
-.gato img{
-    height: 200px;
-}
-
 /* Estilo base del botón */
 button {
     background: linear-gradient(to bottom, #888888, #666666);
@@ -182,7 +128,7 @@ button:hover {
 
 /* Ajustar tamaño del texto del botón */
 button {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .secondary-article img{
@@ -192,6 +138,23 @@ button {
 .secondary-article{
     padding-left: 10px;
 }
+
+.gato-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gato {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    margin: 10px; /* Ajusta el margen entre los div según tus preferencias */
+}
+
+.gato img{
+    height: 200px;
+}
+
 
 
 footer {
@@ -205,10 +168,6 @@ footer {
     width: 100%;
 }
 
-
-
-
-/* Estilos para hacer la página responsiva */
 @media only screen and (max-width: 600px) {
     header {
         padding: 5px;
@@ -288,4 +247,18 @@ footer {
     .secondary-article {
         width: 85%; /* Ajusta el ancho según tus preferencias */
     }
+
+    .perro {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 aspect ratio for a responsive iframe */
+      }
+    
+      .perro iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
 }
