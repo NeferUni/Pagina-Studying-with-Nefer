@@ -1,5 +1,6 @@
 /* inicio.css */
 
+/* Estilos generales */
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
@@ -28,17 +29,17 @@ header {
     border-radius: 50%;
 }
 
-.logo a{
+.logo a {
     text-decoration: none;
     color: #e5e5e5;
 }
 
-.logo a:hover{
+.logo a:hover {
     color: #ffffff;
 }
 
 .logo_titulo {
-   margin-left: 15px;
+    margin-left: 15px;
 }
 
 nav {
@@ -52,23 +53,22 @@ nav ul {
     margin: 0;
 }
 
-nav li{
+nav li {
     margin: 0 15px;
     display: inline;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
     font-weight: 500;
-    
 }
 
 nav a {
     text-decoration: none;
-    color: #000000;
-    background-color: #ffffff;
+    color: #000;
+    background-color: #fff;
     padding: 5px;
     border-radius: 15%;
-    
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
@@ -76,15 +76,14 @@ nav a:hover {
     background-color: #909090;
 }
 
-
-.inicio{
- position: relative;
- background-image: url(../source/img/fondoAnimado2.gif);
- background-position: center center;
- background-size: cover;
- height: 90vh;
- min-height: 30rem;
- 
+/* Sección de inicio */
+.inicio {
+    position: relative;
+    background-image: url(../source/img/fondoAnimado2.gif);
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    min-height: 30rem;
 }
 
 .inicio::before {
@@ -95,10 +94,9 @@ nav a:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-
 }
 
-.inicio h1{
+.inicio h1 {
     position: relative;
     top: 50%;
     left: 50%;
@@ -106,29 +104,27 @@ nav a:hover {
     color: white;
     font-size: 36px;
     text-align: center;
-    margin-top: 0;
+    margin: 0;
 }
 
-
-
+/* Estilos para el main */
 main {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 15px;
+    margin: 15px auto;
     max-width: 1200px;
-    
 }
 
 .main-article {
-    width: 80%; /* Ajusta el ancho según tus preferencias */
+    width: 80%;
 }
 
 .secondary-article {
-    width: 40%; /* Ajusta el ancho según tus preferencias */
+    width: 40%;
+    padding-left: 10px;
 }
 
-/* Añade estilos adicionales según sea necesario para los artículos */
+/* Estilos para artículos */
 article {
     background-color: #f2f2f2;
     padding: 15px;
@@ -137,10 +133,11 @@ article {
     max-width: 800px;
 }
 
-article p{
+article p {
     font-size: 20px;
 }
 
+/* Estilos para contenedor de gatos */
 .gato-container {
     display: flex;
     justify-content: center;
@@ -149,15 +146,15 @@ article p{
 .gato {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos verticalmente */
-    margin: 10px; /* Ajusta el margen entre los div según tus preferencias */
+    align-items: center;
+    margin: 10px;
 }
 
-.gato img{
+.gato img {
     height: 200px;
 }
 
-/* Estilo base del botón */
+/* Estilos para botones */
 button {
     background: linear-gradient(to bottom, #888888, #666666);
     color: #ffffff;
@@ -166,11 +163,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-    margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
-    
+    margin-top: 10px;
+    font-size: 16px;
 }
 
-button a{
+button a {
     text-decoration: none;
     color: #ededed;
 }
@@ -180,35 +177,20 @@ button:hover {
     background: linear-gradient(to bottom, #ff8800, #ff6600);
 }
 
-/* Ajustar tamaño del texto del botón */
-button {
-    font-size: 16px;
-}
-
-.secondary-article img{
+/* Estilos para la imagen secundaria */
+.secondary-article img {
     width: 100%;
 }
 
-.secondary-article{
-    padding-left: 10px;
-}
-
-
+/* Estilos para el footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    position: relative; 
-    
-    width: 100%;
+    padding: 40px 0;
 }
 
-
-
-
-/* Estilos para hacer la página responsiva */
+/* Estilos responsivos */
 @media only screen and (max-width: 600px) {
     header {
         padding: 5px;
@@ -221,7 +203,7 @@ footer {
         margin-bottom: 10px;
     }
 
-    .logo_titulo {
+    .logo_t itulo {
         margin-left: 10px;
         text-align: center;
         margin-top: 10px;
@@ -235,7 +217,6 @@ footer {
     nav ul {
         margin-top: 20px;
         margin-bottom: 10px;
-        
     }
 
     .gato-container {
@@ -243,36 +224,13 @@ footer {
     }
 
     .gato {
-        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column; 
     }
     
-    .gato img{
+    .gato img {
         height: 220px;
-    }
-    
-    /* Estilo base del botón */
-    button {
-        background: linear-gradient(to bottom, #888888, #666666);
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
-    }
-    
-    /* Estilo hover del botón */
-    button:hover {
-        background: linear-gradient(to bottom, #ff8800, #ff6600);
-    }
-    
-    /* Ajustar tamaño del texto del botón */
-    button {
-        font-size: 16px;
     }
 
     main {
@@ -286,6 +244,6 @@ footer {
     }
 
     .secondary-article {
-        width: 85%; /* Ajusta el ancho según tus preferencias */
+        width: 85%;
     }
 }
